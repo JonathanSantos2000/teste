@@ -1,0 +1,109 @@
+#Conteudo{
+    background-color: #333;
+    height: auto;
+    margin: 10px 0px 10px 0px;
+}
+
+#Conteudo h3{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+}
+
+#accordion{
+    margin: 0;
+    background-color: #333;
+}
+
+#itemAccordion [id^=accordion]{
+	display: none;
+}
+
+#itemAccordion [id^=lbl]{
+    display: block;
+    background: #4d4d4d;
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#itemAccordion i{
+    position: absolute;
+    font-size: 30px;
+    padding: 5px 0px 0px 20px;
+}
+
+#itemAccordion [id^=lbl]:hover{
+    background-color: #666666;
+}
+
+#conteudoAccordion{
+    height: 0px;
+    overflow: hidden;  
+    max-width: 700px;
+    margin: auto;
+    transition: 0.5s;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+} 
+
+#conteudoAccordion li{
+    padding: 15px 10px 15px 10px;
+}
+
+#conteudoAccordion input{
+    height: 20px;
+}
+
+#conteudoAccordion select{
+    height: 26px;
+    width: 172px;
+}
+
+input[type=date]{
+    width: 170px;
+}
+
+[id^=accordion]:checked ~ #conteudoAccordion{
+    height: 300px;
+}
+
+#divBtnForm{
+    width: 250px;
+    margin: auto;
+}
+
+#btnForm{
+    background-color: #4d4d4d;
+    width: 100px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px 10px 30px 10px;
+}
+
+#btnForm:hover{
+    background-color: #666666;
+    cursor: pointer;
+}
+#coluna1{
+    width: 70%;
+}
+#coluna1 input{
+    width: 70%;
+}
+#coluna2{
+    width: 30%;
+}
+#coluna2 input{
+    width: 30%;
+}
+
+
+

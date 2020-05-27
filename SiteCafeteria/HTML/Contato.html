@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CaféDaHora</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- Necessário para usar o icone de seta em cada aba de conteúdo -->
+    <link rel="stylesheet" type="text/css" href="../CSS/Contato.css"/>    
+</head>
+<body>
+    <div id="Cabecalho">
+        <script>
+            $(document).ready(function(){
+                $(function(){
+                    $("#Cabecalho").load("Cabecalho.html");
+                });
+            });
+        </script>
+    </div>
+    <div id="Conteudo">
+        <h3>TRABALHE CONOSCO</h3>
+        <form action="#">
+            <div id="accordion"> <!-- Contem todos os itens a mostrar -->
+                <div id="itemAccordion"> <!-- Área do item a mostrar -->
+                    <i class='fas'>&#xf0da;</i>
+                    <input type="radio" name="accordion" checked="checked" id="accordion1" /> <!-- Usado para controle da aba que deve estar aberta -->
+                    <label id="lblAccordion" for= "accordion1">INFORMAÇÕES BÁSICAS</label>
+                    <div id="conteudoAccordion"> <!-- Área do conteúdo presente no item a mostrar -->
+                        <div id="coluna1">
+                            <li>
+                                <label for="Nome">Nome Completo</label><br>
+                                <input type="text" name="nome">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="CPF">CPF</label><br>
+                            <input type="text" name="cpf">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Email">E-mail</label><br>
+                                <input type="email" name="email">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="Sexo">Sexo</label><br>
+                            <select name="sexo">
+                                <option value="select">Selecione</option> 
+                                <option value="masc">Masculino</option> 
+                                <option value="femi">Feminino</option>
+                            </select>
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Nacionalidade">Nacionalidade</label><br>
+                                <input type="text" name="nacionalidade">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="Idade">Idade</label><br>
+                            <input type="number" name="idade">
+                        </li>
+                        <div id="coluna1">
+                        <li>
+                            <label for="Telefone">Telefone</label><br>
+                            <input type="text" name="tefefone">
+                        </li>
+                        </div>
+                        <li>
+                            <label for="Celular">Celular</label><br>
+                            <input type="text" name="celular">
+                        </li>
+                    </div>
+                </div> 
+                <div id="itemAccordion">
+                    <i class='fas'>&#xf0da;</i>
+                    <input type="radio" name="accordion" id="accordion2" />
+                    <label id="lblAccordion" for= "accordion2">ENDEREÇO</label>
+                    <div id="conteudoAccordion">
+                        <div id="coluna1">
+                        <li>
+                            <label for="Rua">Rua</label><br>
+                            <input type="text" name="rua">
+                        </li></div>
+                        <li>
+                            <label for="Bairro">Bairro</label><br>
+                            <input type="text" name="bairro">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Numero">Número</label><br>
+                                <input type="number" name="numero">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="Complemento">Complemento</label><br>
+                            <input type="text" name="complemento">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Cidade">Cidade</label><br>
+                                <input type="text" name="cidade">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="UF">UF</label><br>
+                            <input type="text" name="uf">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Pais">País</label><br>
+                                <input type="text" name="pais">
+                            </li>  
+                        </div>                      
+                        <li>
+                            <label for="CEP">CEP</label><br>
+                            <input type="text" name="cep">
+                        </li>
+                    </div>
+                </div>      
+                <div id="itemAccordion">
+                    <i class='fas'>&#xf0da;</i>
+                    <input type="radio" name="accordion" id="accordion3" />
+                    <label id="lblAccordion" for= "accordion3">ESCOLARIDADE</label>
+                    <div id="conteudoAccordion">
+                        <div id="coluna1">
+                            <li>
+                                <label for="NvlEscolaridade">Nível Escolaridade</label><br>
+                                <input type="text" name="nvlEscolaridade">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="DataInicio">Data Início</label><br>
+                            <input type="date" name="dataInicio">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Semestre">Semestre</label><br>
+                                <input type="text" name="semestre">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="DataTermino">Data Término</label><br>
+                            <input type="date" name="dataTermino">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Curso">Curso</label><br>
+                                <input type="text" name="curso">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="Turno">Turno</label><br>
+                            <input type="text" name="turno">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Instituicao">Instituição</label><br>
+                                <input type="text" name="instituicao">
+                            </li>                            
+                        </div>
+                        <li>
+                                <label for="CidadeEsc">Cidade</label><br>
+                                <input type="text" name="cidade">
+                        </li>
+                    </div>
+                </div>
+                <div id="itemAccordion">
+                    <i class='fas'>&#xf0da;</i>
+                    <input type="radio" name="accordion" id="accordion4" />
+                    <label id="lblAccordion" for= "accordion4">COMPETÊNCIAS</label>
+                    <div id="conteudoAccordion">
+                        <li>
+                            <label for="Competencias">Descrição breve de suas competências</label><br>
+                            <textarea maxlength="670" style="width: 390px; max-width: 390px; height: 200px; max-height: 200px;"></textarea><br>
+                            <p style="margin: 0; font-size: 10px;">Máximo 670 Caracteres</p>
+                        </li>
+                    </div>
+                </div>
+                <div id="itemAccordion">
+                    <i class='fas'>&#xf0da;</i>
+                    <input type="radio" name="accordion" id="accordion5" />
+                    <label id="lblAccordion" for= "accordion5">PRETENSÃO</label>
+                    <div id="conteudoAccordion">
+                        <div id="coluna1">
+                            <li>
+                                <label for="Cargo">Cargo</label><br>
+                                <input type="text" name="cargo">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="Area">Área</label><br>
+                            <input type="text" name="area">
+                        </li>
+                        <div id="coluna1">
+                            <li>
+                                <label for="Salario">Salário</label><br>
+                                <input name="salario">
+                            </li>
+                        </div>
+                        <li>
+                            <label for="Modalidade">Modalidade</label><br>
+                            <select name="modalidade">
+                                <option value="Efetivo">Efetivo</option> 
+                                <option value="Estagiario">Estagiário</option> 
+                                <option value="MenorAprendiz">Menor Aprendiz</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="Viagens">Disponibilidade Viagens</label><br>
+                            <input type="radio" name="viagens" value="SIM">
+                            <label for="SIM">Sim</label>
+                            <input type="radio" name="viagens" value="NÃO">
+                            <label for="NAO">Não</label>
+                        </li>
+                    </div>
+                </div>
+                <div id="itemAccordion">
+                    <i class='fas'>&#xf0da;</i>
+                    <input type="radio" name="accordion" id="accordion6" />
+                    <label id="lblAccordion" for= "accordion6">ADICIONAIS</label>
+                    <div id="conteudoAccordion">
+                        <li>
+                            <label for="Deficiente">Possui Deficiência?</label><br>
+                            <input type="radio" name="deficiencia" value="SIM">
+                            <label for="SIM">Sim</label>
+                            <input type="radio" name="deficiencia" value="NÃO">
+                            <label for="NAO">Não</label>
+                        </li>
+                        <li>
+                            <label for="Habilitacao">Habilitação</label><br>
+                            <select name="habilitacao">
+                                <option value="NaoPossui">Não Possui</option> 
+                                <option value="PossuiNaoDirige">Possui Mas Não Dirige</option> 
+                                <option value="CatA">Categoria A</option>
+                                <option value="CatB">Categoria B</option>
+                                <option value="CatAB">Categoria AB</option>
+                                <option value="CatC">Categoria C</option>
+                                <option value="CatD">Categoria D</option>
+                                <option value="CatE">Categoria E</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="Observacoes">Observações</label><br>
+                            <textarea maxlength="300" style="width: 390px; max-width: 390px; height: 100px; max-height: 100px;"></textarea><br>
+                            <p style="margin: 0; font-size: 10px;">Máximo 300 Caracteres</p>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div id="divBtnForm">
+                <input id="btnForm" type="submit" value="Enviar">
+                <button id="btnForm">Cancelar</button>
+            </div>
+        </form>
+    
+    </div>
+    <div id="Rodape">
+
+        <script>
+            $(document).ready(function(){
+                $(function(){
+                    $("#Rodape").load("Rodape.html");
+                });
+            });
+        </script>
+
+    </div>
+
+</body>
+</html>

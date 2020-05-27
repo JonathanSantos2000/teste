@@ -1,0 +1,156 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#barraMenu{
+    background-color:#333;
+}
+#logoCabecalho{
+    display: flex;
+    justify-content: center;
+    background-color: #666666;
+}
+
+#logoCabecalho img{
+    height: 100px;
+    width: 100px;
+}
+
+#loginBtn{
+    float: right;
+    margin-top: -90px;
+    margin-right: 20px;
+}
+
+#loginBtn button{
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+#loginBtn button:hover{
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li{
+    width: 150px;
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover{
+    background-color: #333;
+    color: white;
+}
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+    background-color: #666666;
+}
+
+label[for="bt_menu"]{
+    padding: 1px;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#bt_menu{
+    display: none;
+}
+
+label[for="bt_menu"]{
+    display: none;
+}
+
+
+@media(max-width: 980px) {
+    label[for="bt_menu"]{
+        display: block;
+        border: solid 1px #ccc;
+    }
+
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+    }
+    #loginBtn{
+        float: right;
+        margin-top: 0;
+        margin-right: 20px;
+        border: solid 1px #ccc;
+    }
+    .menu{ 
+        display: block;
+        height: 0;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    .menu ul{
+        padding-left: 0px;
+    }
+    .menu ul li{
+        width: 30%;
+        border: solid 1px #ccc;
+        float: none;
+    }
+
+    .menu ul ul{
+        padding: 0;
+        width: 330%;
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+    
+
+    
+}
